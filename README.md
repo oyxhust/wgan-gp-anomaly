@@ -65,5 +65,10 @@ I train the GAN using "0" images and test it on the all classes images. Here are
 
 The GAN can only generate "0" images which refer to the normal situations. When input the abnormal images (like "1", "8" and so on), the GAN will output the similar corresponding "0" images.
 
+## TODO
+- [ ] Testing on other dataset
+- [ ] Adding the improved discriminator loss in the paper (Now, I only use the L1 loss to update the noise Z)
+
+
 ## Acknowledgments
 Code is inspired by [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) and [wgan-gp](https://github.com/caogang/wgan-gp).
