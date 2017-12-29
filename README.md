@@ -1,4 +1,4 @@
-# WGAN-GP for Unsurpevised Anomaly Detection in PyTorch
+# WGAN-GP for Unsupervised Anomaly Detection in PyTorch
 
 This is the PyTorch implementation for unsurpevised anomaly detection.
 
@@ -47,7 +47,8 @@ tar zxvf data.tar.gz
 ```
 
 - Train a model:
-under the main folder:
+
+Under the main folder:
 ```bash
 python train.py --dataroot ./datasets/MNIST --name mnist --no_flip
 ```
@@ -60,7 +61,7 @@ The test results will be saved to a html file here: `./results/mnist/latest_test
 
 ## Results
 I train the GAN using "0" images and test it on the all classes images. Here are the visual results:
-<img src='imgs/results.jpg' width="780px"/>
+<img src='imgs/results.jpg' width="800px"/>
 
 The GAN can only generate "0" images which refer to the normal situations. When input the abnormal images (like "1", "8" and so on), the GAN will output the similar corresponding "0" images.
 
