@@ -1,6 +1,6 @@
 # WGAN-GP for Unsupervised Anomaly Detection in PyTorch
 
-This is the PyTorch implementation for unsurpevised anomaly detection.
+This is the PyTorch implementation for unsupervised anomaly detection.
 
 The code was written by [Xi Ouyang](https://github.com/oyxhust).
 
@@ -66,7 +66,7 @@ I train the GAN using "0" images and test it on the all classes images. Here are
 The GAN can only generate "0" images which refer to the normal situations. When input the abnormal images (like "1", "8" and so on), the GAN will output the similar corresponding "0" images.
 
 ## TODO
-- [ ] Testing on other dataset
+- [ ] Testing on other datasets
 - [ ] Adding the improved discriminator loss in the paper (Now, I only use the L1 loss to update the noise Z)
 
 
