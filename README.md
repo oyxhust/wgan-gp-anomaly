@@ -60,7 +60,8 @@ The test results will be saved to a html file here: `./results/mnist/latest_test
 
 ## Results
 I train the GAN using "0" images and test it on the all classes images. Here are the visual results:
-<img src='imgs/results.jpg' width="700px"/>
+<img src='imgs/results.jpg' width="800px"/>
+
 The GAN can only generate "0" images which refer to the normal situations. When input the abnormal images (like "1", "8" and so on), the GAN will output the similar corresponding "0" images.
 
 ## Acknowledgments
