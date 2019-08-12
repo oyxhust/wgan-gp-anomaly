@@ -162,9 +162,9 @@ class WGAN_GP_Model(BaseModel):
 
 
     def get_current_errors(self):
-        return OrderedDict([('G_loss', self.G_cost.data[0]),
-                                ('D_loss', self.D_cost.data[0]),
-                                ('Wasserstein_D', self.Wasserstein_D.data[0])
+        return OrderedDict([('G_loss', self.G_cost.data.item()),
+                                ('D_loss', self.D_cost.data.item()),
+                                ('Wasserstein_D', self.Wasserstein_D.data.item())
                                 ])
 
     def get_current_visuals(self):
